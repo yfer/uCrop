@@ -596,6 +596,7 @@ public class UCropActivity extends AppCompatActivity {
     };
 
     private void setInitialState() {
+        setAllowedGestures(2);
         if (mShowBottomControls) {
             if (mWrapperStateAspectRatio.getVisibility() == View.VISIBLE) {
                 setWidgetState(R.id.state_aspect_ratio);
