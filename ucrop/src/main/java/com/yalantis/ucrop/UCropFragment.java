@@ -149,7 +149,7 @@ public class UCropFragment extends Fragment {
         if (mShowBottomControls) {
 
             ViewGroup wrapper = view.findViewById(R.id.controls_wrapper);
-            wrapper.setVisibility(View.VISIBLE);
+            wrapper.setVisibility(View.INVISIBLE);
             LayoutInflater.from(getContext()).inflate(R.layout.ucrop_controls, wrapper, true);
 
             mControlsTransition = new AutoTransition();

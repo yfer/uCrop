@@ -305,7 +305,7 @@ public class UCropActivity extends AppCompatActivity {
 
             ViewGroup viewGroup = findViewById(R.id.ucrop_photobox);
             ViewGroup wrapper = viewGroup.findViewById(R.id.controls_wrapper);
-            wrapper.setVisibility(View.VISIBLE);
+            wrapper.setVisibility(View.GONE);
             LayoutInflater.from(this).inflate(R.layout.ucrop_controls, wrapper, true);
 
             mControlsTransition = new AutoTransition();
@@ -596,7 +596,6 @@ public class UCropActivity extends AppCompatActivity {
     };
 
     private void setInitialState() {
-        setAllowedGestures(2);
         if (mShowBottomControls) {
             if (mWrapperStateAspectRatio.getVisibility() == View.VISIBLE) {
                 setWidgetState(R.id.state_aspect_ratio);
